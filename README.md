@@ -53,9 +53,9 @@ aromaShooterController.diffuse(durration, ports, booster);
 ``` 
 
 
-**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)**
+**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample).**  
+**If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-windows/issues).**
 
-**If you have any issues or require a feature, please create a [new issue](https://github.com/aromajoin/controller-sdk-windows/issues)**
 ---
 ## License  
 
