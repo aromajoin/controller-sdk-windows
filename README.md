@@ -8,7 +8,7 @@
 # Table of Contents
 1. [Supported devices](https://github.com/aromajoin/controller-sdk-windows#supported-devices)  
 2. [Prerequisites](https://github.com/aromajoin/controller-sdk-windows#prerequisites)
-3. [Installation](https://github.com/aromajoin/controller-sdk-windowsinstallation)
+3. [Installation](https://github.com/aromajoin/controller-sdk-windows#installation)
 4. [Usage](https://github.com/aromajoin/controller-sdk-windows#usage)
     * [Connect devices](https://github.com/aromajoin/controller-sdk-windows#connect-devices)
     * [Diffuse scents](https://github.com/aromajoin/controller-sdk-windows#diffuse-scents)
