@@ -10,7 +10,7 @@
 2. [Prerequisites](https://github.com/aromajoin/controller-sdk-windows#prerequisites)
 3. [Installation](https://github.com/aromajoin/controller-sdk-windows#installation)
 4. [Usage](https://github.com/aromajoin/controller-sdk-windows#usage)
-    * [Connect devices](https://github.com/aromajoin/controller-sdk-windows#connect-devices)
+    * [Setup and connect devices](https://github.com/aromajoin/controller-sdk-windows#setup-and-connect-devices)
     * [Diffuse scents](https://github.com/aromajoin/controller-sdk-windows#diffuse-scents)
 5. [License](https://github.com/aromajoin/controller-sdk-windows#license)
 
