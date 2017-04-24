@@ -34,7 +34,7 @@
 * Please [download the .zip file](https://github.com/aromajoin/controller-sdk-windows/releases/).
 * Extract it to grab .dll files.
 * Add these .dll files into your project as *References*. 
-
+* **For Bluetooth version**, please connect Aroma Shooter via Bluetooth Settings section in Windows before starting application. If you restart your app, make sure to reconnect it again.
 ---
 ## Usage  
  
