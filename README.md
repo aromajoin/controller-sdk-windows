@@ -22,10 +22,8 @@
 
 ---
 ## Prerequisites
-* Windows version:
-  * 8+ (Bluetooth version)
-  * 7+ (USB version)
-* .NET Framework: 4.5 + 
+* Windows version: 8+ 
+* .NET Framework: 4.5+ 
 * [Device driver installation](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)
 
 ---
