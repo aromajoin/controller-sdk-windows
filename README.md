@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 
-**The Windows version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/hardware/shooters/aroma-shooter-1)**  
+**The Windows version of AromaShooterController SDK which is used to communicate with [Aroma Shooter devices](https://aromajoin.com/hardware/shooters/aroma-shooter-1).**  
 
 # Table of Contents
 1. [Supported devices](https://github.com/aromajoin/controller-sdk-windows#supported-devices)  
@@ -14,26 +14,25 @@
     * [Diffuse scents](https://github.com/aromajoin/controller-sdk-windows#diffuse-scents)
 5. [License](https://github.com/aromajoin/controller-sdk-windows#license)
 
----
-
 ## Supported devices
-* Aroma Shooter Bluetooth version  
-* Aroma Shooter USB version  
+* Aroma Shooter Bluetooth BLE  
+* Aroma Shooter USB
 
----
 ## Prerequisites
-* Windows version: 8+ 
-* .NET Framework: 4.5+ 
-* [Device driver installation](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)
+* Windows version: 8+.
+* .NET Framework: 4.5+. 
+* For Aroma Shooter USB, please install [device driver](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip).
 
----
 ## Installation  
+* Clone this repository or [download the .zip file](https://github.com/aromajoin/controller-sdk-windows/releases/).
+* Get library binary files (.dll) at [`libs` folder](https://github.com/aromajoin/controller-sdk-windows/tree/master/libs).
+* Add these .dll files into your project as *References*.  
 
-* Please [download the .zip file](https://github.com/aromajoin/controller-sdk-windows/releases/).
-* Extract it to grab .dll files.
-* Add these .dll files into your project as *References*. 
-* **For Bluetooth version**, please connect Aroma Shooter via Bluetooth Settings section in Windows before starting application. If you restart your app, make sure to reconnect it again.
----
+**For Bluetooth version**, please connect Aroma Shooter via Bluetooth Settings section in Windows before starting application. If you restart your app, make sure to reconnect it again.  
+
+## Sample
+You might want to try the [sample app](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample) by using Visual Studio.
+
 ## Usage  
  
 *Firstly, get the reference of AromaShooterController*
@@ -51,11 +50,8 @@ Using *Diffuse APIs*  :
 aromaShooterController.diffuse(durration, ports, booster);
 ``` 
 
-
-**For more information, please checkout this repository and refer to the [sample project](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample).**  
 **If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-windows/issues).**
 
----
 ## License  
 
 The Apache License (Apache)
