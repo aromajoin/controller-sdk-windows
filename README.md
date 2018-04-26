@@ -22,6 +22,7 @@
 * Windows version: 8+.
 * .NET Framework: 4.5+. 
 * For Aroma Shooter USB, please install [device driver](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip).
+* For Aroma Shooter BLE, please check Windows Bluetooth connection guide: [Japanese](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/).
 
 ## Installation  
 * Clone this repository or [download the .zip file](https://github.com/aromajoin/controller-sdk-windows/releases/).
