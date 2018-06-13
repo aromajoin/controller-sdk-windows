@@ -1,3 +1,5 @@
+[English](https://github.com/aromajoin/controller-sdk-windows) / [日本語](README-JP.md)
+
 # Controller SDK for Windows
 
 [![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
@@ -50,6 +52,10 @@ Using *Diffuse APIs*  :
 ```C#
 aromaShooterController.diffuse(durration, ports, booster);
 ``` 
+For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds.
+```
+aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
+```
 
 **If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-windows/issues).**
 
