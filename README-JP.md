@@ -20,13 +20,13 @@
 * Aroma Shooter USB
 
 ## 前提条件
-* Windows版: 8+.
-* .NET Framework: 4.5+. 
+* Windows版: 8+
+* .NET Framework: 4.5+
 * Aroma Shooter USBの場合は、「ドライバ」(http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
-* Aroma Shooter の場合は, WindowsのBluetooth接続ガイドを確認してください: [日本語](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/).
+* Aroma Shooter の場合は, WindowsのBluetooth接続ガイドを確認してください: [日本語](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/)。
 
 ## インストール  
-1. このリポジトリを複製するか、[.zipファイル](https://github.com/aromajoin/controller-sdk-windows/releases/)をダウンロードしてください.
+1. このリポジトリを複製するか、[.zipファイル](https://github.com/aromajoin/controller-sdk-windows/releases/)をダウンロードしてください。
 2. [libs`フォルダ]（https://github.com/aromajoin/controller-sdk-windows/tree/master/libs）でライブラリバイナリファイル（.dll）を入手してください。
 3. これらの.dllファイルをプロジェクトに*References*として追加してください。  
 
@@ -37,7 +37,7 @@ Visual Studioを使用して[サンプルアプリケーション]（https://git
 
 ## 使用法  
  
-*まずにAroma Shooter Controllerのリファレンスを入手してください*
+*まずにAroma Shooter Controllerのリファレンスを入手してください。*
 ```C#
 AromaShooterController aromaShooterController = AromaShooterController.sharedInstance;
 ```
@@ -47,11 +47,11 @@ aromaShooterController.setup();
 ```
 ### 香りを拡散する
 
-「Diffuse」APIを使用してください:
+「Diffuse」APIを使用してください。
 ```C#
 aromaShooterController.diffuse(durration, ports, booster);
 ``` 
-例：以下のコードは、カートリッジ1,2および3を3秒間拡散します
+例：以下のコードは、カートリッジ1,2および3を3秒間拡散します。
 ```
 aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
 ```
@@ -59,4 +59,4 @@ aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
 **問題が発生したり、新機能が必要な場合は、[新しい問題]（https://github.com/aromajoin/controller-sdk-windows/issues）を作成してください。**
 
 ## ライセンス
-[こちら](https://github.com/aromajoin/controller-sdk-windows/blob/master/LICENSE.md)を参照してください.
+[こちら](https://github.com/aromajoin/controller-sdk-windows/blob/master/LICENSE.md)を参照してください。
