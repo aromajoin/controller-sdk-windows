@@ -56,7 +56,7 @@ aromaShooterController.diffuse(durration, ports, booster);
 aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
 ```
 
-**問題が発生したり、新機能が必要な場合は、[新しい問題]（https://github.com/aromajoin/controller-sdk-windows/issues）を作成してください。**
+**問題が発生したり、新機能が必要な場合は、[新しい問題](https://github.com/aromajoin/controller-sdk-windows/issues)を作成してください。**
 
 ## ライセンス
 [こちら](https://github.com/aromajoin/controller-sdk-windows/blob/master/LICENSE.md)を参照してください。
