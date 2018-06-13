@@ -22,18 +22,18 @@
 ## 前提条件
 * Windows版: 8+
 * .NET Framework: 4.5+
-* Aroma Shooter USBの場合は、「ドライバ」(http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
+* Aroma Shooter USBの場合は、[ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
 * Aroma Shooter の場合は, WindowsのBluetooth接続ガイドを確認してください: [日本語](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/)。
 
 ## インストール  
 1. このリポジトリを複製するか、[.zipファイル](https://github.com/aromajoin/controller-sdk-windows/releases/)をダウンロードしてください。
-2. [libs`フォルダ]（https://github.com/aromajoin/controller-sdk-windows/tree/master/libs）でライブラリバイナリファイル（.dll）を入手してください。
+2. [’libs’フォルダ](https://github.com/aromajoin/controller-sdk-windows/tree/master/libs)でライブラリバイナリファイル（.dll）を入手してください。
 3. これらの.dllファイルをプロジェクトに*References*として追加してください。  
 
 ** Bluetoothバージョン**では、アプリケーションを起動する前に、WindowsのBluetooth設定セクションからAroma Shooterに接続してください。 アプリを再起動した場合は、もう一度再接続してください。
 
 ## サンプル
-Visual Studioを使用して[サンプルアプリケーション]（https://github.com/aromajoin/controller-sdk-windows/tree/master/sample）を試してみてください。
+Visual Studioを使用して[サンプルアプリケーション](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)を試してみてください。
 
 ## 使用法  
  
