@@ -30,7 +30,7 @@
 2. [’libs’フォルダ](https://github.com/aromajoin/controller-sdk-windows/tree/master/libs)でライブラリバイナリファイル（.dll）を入手してください。
 3. これらの.dllファイルをプロジェクトに*References*として追加してください。  
 
-** Bluetoothバージョン**では、アプリケーションを起動する前に、WindowsのBluetooth設定セクションからAroma Shooterに接続してください。 アプリを再起動した場合は、もう一度再接続してください。
+**Bluetoothバージョン**では、アプリケーションを起動する前に、WindowsのBluetooth設定セクションからAroma Shooterに接続してください。 アプリを再起動した場合は、もう一度再接続してください。
 
 ## サンプル
 Visual Studioを使用して[サンプルアプリケーション](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)を試してみてください。
