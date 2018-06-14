@@ -12,32 +12,32 @@
 3. [インストール](#インストール)
 4. [使用法](#使用法)
     * [デバイスのセットアップと接続](#デバイスのセットアップと接続)
-    * [香りを拡散する](#香りを拡散する)
+    * [香りを噴射する](#香りを噴射する)
 5. [ライセンス](#ライセンス)
 
 ## 対応デバイス
-* Aroma Shooter Bluetooth BLE  
-* Aroma Shooter USB
+* Aroma Shooter Bluetoothタイプ
+* Aroma Shooter USBタイプ
 
 ## 前提条件
 * Windows版: 8+
 * .NET Framework: 4.5+
-* Aroma Shooter USBの場合は、[ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
-* Aroma Shooter の場合は, WindowsのBluetooth接続ガイドを確認してください: [日本語](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/)。
+* Aroma Shooter USBタイプの場合は、[ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
+* Aroma Shooter Bluetoothタイプの場合は、WindowsのBluetooth接続ガイドを確認してください。[日本語](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/)。
 
 ## インストール  
 1. このリポジトリを複製するか、[.zipファイル](https://github.com/aromajoin/controller-sdk-windows/releases/)をダウンロードしてください。
 2. [’libs’フォルダ](https://github.com/aromajoin/controller-sdk-windows/tree/master/libs)でライブラリバイナリファイル（.dll）を入手してください。
 3. これらの.dllファイルをプロジェクトに*References*として追加してください。  
 
-**Bluetoothバージョン**では、アプリケーションを起動する前に、WindowsのBluetooth設定セクションからAroma Shooterに接続してください。 アプリを再起動した場合は、もう一度再接続してください。
+**Bluetoothタイプ**では、アプリケーションを起動する前に、WindowsのBluetooth設定セクションからAroma Shooterに接続してください。 アプリを再起動した場合は、もう一度再接続してください。
 
 ## サンプル
 Visual Studioを使用して[サンプルアプリケーション](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)を試してみてください。
 
 ## 使用法  
  
-*まずにAroma Shooter Controllerのリファレンスを入手してください。*
+*初めにAroma Shooter Controllerのリファレンスを入手してください。*
 ```C#
 AromaShooterController aromaShooterController = AromaShooterController.sharedInstance;
 ```
@@ -45,18 +45,18 @@ AromaShooterController aromaShooterController = AromaShooterController.sharedIns
 ```C#
 aromaShooterController.setup();
 ```
-### 香りを拡散する
+### 香りを噴射する
 
 「Diffuse」APIを使用してください。
 ```C#
 /**
- * @param duration     拡散持続時間（ミリ秒）。
- * @param ports        カートリッジ番号を拡散する。値：1 ~ 6.
- * @param booster      ブースターが使用されているかどうかを判定する。(true: より強く拡散する, false: より弱く拡散する)
+ * @param duration     噴射持続時間（ミリ秒）。
+ * @param ports        カートリッジ番号を噴射する。値：1 ~ 6.
+ * @param booster      ブースターが使用されているかどうかを判定する。(true: より強く噴射する, false: より弱く噴射する)
  */
 aromaShooterController.diffuse(durration, ports, booster);
 ``` 
-例：以下のコードは、カートリッジ1,2および3を3秒間拡散します。
+例：以下のコードは、カートリッジ1,2および3を3秒間噴射します。
 ```
 aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
 ```
