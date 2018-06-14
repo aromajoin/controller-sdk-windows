@@ -49,6 +49,11 @@ aromaShooterController.setup();
 
 「Diffuse」APIを使用してください。
 ```C#
+/**
+ * @param duration     拡散持続時間（ミリ秒）。
+ * @param ports        カートリッジ番号を拡散する。値：1 ~ 6.
+ * @param booster      ブースターが使用されているかどうかを判定する。(true: より強く拡散する, false: より弱く拡散する)
+ */
 aromaShooterController.diffuse(durration, ports, booster);
 ``` 
 例：以下のコードは、カートリッジ1,2および3を3秒間拡散します。
