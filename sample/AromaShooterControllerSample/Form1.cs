@@ -16,13 +16,13 @@ namespace ControllerSample
     public partial class Form1 : Form
     {
         //Get AromaShooterController references
-        private AromaShooterController aromaShooterController = AromaShooterController.sharedInstance;
+        private AromaShooterController aromaShooterController = AromaShooterController.SharedInstance;
         public Form1()
         {
             InitializeComponent();
 
             //Initalize 
-            aromaShooterController.setup();
+            aromaShooterController.Setup();
         }
 
         /// <summary>
@@ -37,32 +37,37 @@ namespace ControllerSample
 
         private void Cartridge1_Click(object sender, EventArgs e)
         {
-            aromaShooterController.diffuse(3000, new int[] { 1 }, false);
+            aromaShooterController.Diffuse(3000, new int[] { 1 }, true);
         }
 
         private void Cartridge2_Click(object sender, EventArgs e)
         {
-            aromaShooterController.diffuse(3000, new int[] { 2}, true);
+            aromaShooterController.Diffuse(3000, new int[] { 2}, true);
         }
 
         private void Cartridge3_Click(object sender, EventArgs e)
         {
-            aromaShooterController.diffuse(3000, new int[] { 3 }, true);
+            aromaShooterController.Diffuse(3000, new int[] { 3 }, true);
         }
 
         private void Cartridge4_Click(object sender, EventArgs e)
         {
-            aromaShooterController.diffuse(3000, new int[] { 4 }, true);
+            aromaShooterController.Diffuse(3000, new int[] { 4 }, true);
         }
 
         private void Cartridge5_Click(object sender, EventArgs e)
         {
-            aromaShooterController.diffuse(3000, new int[] { 5 }, true);
+            aromaShooterController.Diffuse(3000, new int[] { 5 }, true);
         }
 
         private void Cartridge6_Click(object sender, EventArgs e)
         {
-            aromaShooterController.diffuse(3000, new int[] { 6 }, true);
+            aromaShooterController.Diffuse(3000, new int[] { 6 }, true);
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            aromaShooterController.Stop();
         }
     }
 }

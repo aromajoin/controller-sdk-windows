@@ -34,13 +34,15 @@
             this.Cartridge4 = new System.Windows.Forms.Button();
             this.Cartridge5 = new System.Windows.Forms.Button();
             this.Cartridge6 = new System.Windows.Forms.Button();
+            this.StopButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Cartridge1
             // 
-            this.Cartridge1.Location = new System.Drawing.Point(23, 86);
+            this.Cartridge1.Location = new System.Drawing.Point(42, 172);
+            this.Cartridge1.Margin = new System.Windows.Forms.Padding(6);
             this.Cartridge1.Name = "Cartridge1";
-            this.Cartridge1.Size = new System.Drawing.Size(75, 23);
+            this.Cartridge1.Size = new System.Drawing.Size(138, 46);
             this.Cartridge1.TabIndex = 0;
             this.Cartridge1.Text = "Cartridge1";
             this.Cartridge1.UseVisualStyleBackColor = true;
@@ -48,9 +50,10 @@
             // 
             // Cartridge2
             // 
-            this.Cartridge2.Location = new System.Drawing.Point(172, 86);
+            this.Cartridge2.Location = new System.Drawing.Point(315, 172);
+            this.Cartridge2.Margin = new System.Windows.Forms.Padding(6);
             this.Cartridge2.Name = "Cartridge2";
-            this.Cartridge2.Size = new System.Drawing.Size(75, 23);
+            this.Cartridge2.Size = new System.Drawing.Size(138, 46);
             this.Cartridge2.TabIndex = 1;
             this.Cartridge2.Text = "Cartridge2";
             this.Cartridge2.UseVisualStyleBackColor = true;
@@ -58,9 +61,10 @@
             // 
             // Cartridge3
             // 
-            this.Cartridge3.Location = new System.Drawing.Point(325, 86);
+            this.Cartridge3.Location = new System.Drawing.Point(596, 172);
+            this.Cartridge3.Margin = new System.Windows.Forms.Padding(6);
             this.Cartridge3.Name = "Cartridge3";
-            this.Cartridge3.Size = new System.Drawing.Size(75, 23);
+            this.Cartridge3.Size = new System.Drawing.Size(138, 46);
             this.Cartridge3.TabIndex = 2;
             this.Cartridge3.Text = "Cartridge3";
             this.Cartridge3.UseVisualStyleBackColor = true;
@@ -68,9 +72,10 @@
             // 
             // Cartridge4
             // 
-            this.Cartridge4.Location = new System.Drawing.Point(23, 152);
+            this.Cartridge4.Location = new System.Drawing.Point(42, 304);
+            this.Cartridge4.Margin = new System.Windows.Forms.Padding(6);
             this.Cartridge4.Name = "Cartridge4";
-            this.Cartridge4.Size = new System.Drawing.Size(75, 23);
+            this.Cartridge4.Size = new System.Drawing.Size(138, 46);
             this.Cartridge4.TabIndex = 3;
             this.Cartridge4.Text = "Cartridge4";
             this.Cartridge4.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // Cartridge5
             // 
-            this.Cartridge5.Location = new System.Drawing.Point(172, 152);
+            this.Cartridge5.Location = new System.Drawing.Point(315, 304);
+            this.Cartridge5.Margin = new System.Windows.Forms.Padding(6);
             this.Cartridge5.Name = "Cartridge5";
-            this.Cartridge5.Size = new System.Drawing.Size(75, 23);
+            this.Cartridge5.Size = new System.Drawing.Size(138, 46);
             this.Cartridge5.TabIndex = 4;
             this.Cartridge5.Text = "Cartridge5";
             this.Cartridge5.UseVisualStyleBackColor = true;
@@ -88,25 +94,38 @@
             // 
             // Cartridge6
             // 
-            this.Cartridge6.Location = new System.Drawing.Point(325, 152);
+            this.Cartridge6.Location = new System.Drawing.Point(596, 304);
+            this.Cartridge6.Margin = new System.Windows.Forms.Padding(6);
             this.Cartridge6.Name = "Cartridge6";
-            this.Cartridge6.Size = new System.Drawing.Size(75, 23);
+            this.Cartridge6.Size = new System.Drawing.Size(138, 46);
             this.Cartridge6.TabIndex = 5;
             this.Cartridge6.Text = "Cartridge6";
             this.Cartridge6.UseVisualStyleBackColor = true;
             this.Cartridge6.Click += new System.EventHandler(this.Cartridge6_Click);
             // 
+            // StopButton
+            // 
+            this.StopButton.Location = new System.Drawing.Point(224, 399);
+            this.StopButton.Name = "StopButton";
+            this.StopButton.Size = new System.Drawing.Size(293, 64);
+            this.StopButton.TabIndex = 6;
+            this.StopButton.Text = "Stop";
+            this.StopButton.UseVisualStyleBackColor = true;
+            this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 261);
+            this.ClientSize = new System.Drawing.Size(774, 522);
+            this.Controls.Add(this.StopButton);
             this.Controls.Add(this.Cartridge6);
             this.Controls.Add(this.Cartridge5);
             this.Controls.Add(this.Cartridge4);
             this.Controls.Add(this.Cartridge3);
             this.Controls.Add(this.Cartridge2);
             this.Controls.Add(this.Cartridge1);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "AromaShooterControllerSample";
             this.ResumeLayout(false);
@@ -121,6 +140,7 @@
         private System.Windows.Forms.Button Cartridge4;
         private System.Windows.Forms.Button Cartridge5;
         private System.Windows.Forms.Button Cartridge6;
+        private System.Windows.Forms.Button StopButton;
     }
 }
 
