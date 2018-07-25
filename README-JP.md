@@ -13,6 +13,7 @@
 4. [使用法](#使用法)
     * [デバイスのセットアップと接続](#デバイスのセットアップと接続)
     * [香りを噴射する](#香りを噴射する)
+    * [噴射を止める](#噴射を止める)
 5. [ライセンス](#ライセンス)
 
 ## 対応デバイス
@@ -39,11 +40,11 @@ Visual Studioを使用して[サンプルアプリケーション](https://githu
  
 *初めにAroma Shooter Controllerのリファレンスを入手してください。*
 ```C#
-AromaShooterController aromaShooterController = AromaShooterController.sharedInstance;
+AromaShooterController aromaShooterController = AromaShooterController.SharedInstance;
 ```
 ### デバイスのセットアップと接続
 ```C#
-aromaShooterController.setup();
+aromaShooterController.Setup();
 ```
 ### 香りを噴射する
 
@@ -54,13 +55,16 @@ aromaShooterController.setup();
  * @param ports        カートリッジ番号を噴射する。値：1 ~ 6.
  * @param booster      ブースターが使用されているかどうかを判定する。(true: より強く噴射する, false: より弱く噴射する)
  */
-aromaShooterController.diffuse(durration, ports, booster);
+aromaShooterController.Diffuse(durration, ports, booster);
 ``` 
 例：以下のコードは、カートリッジ1,2および3を3秒間噴射します。
+```C#
+aromaShooterController.Diffuse(3000, new int[]{1, 2, 3}, true);
 ```
-aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
+### 噴射を止める
 ```
-
+aromaShooterController.Stop();
+```
 **問題が発生したり、新機能が必要な場合は、[新しい問題](https://github.com/aromajoin/controller-sdk-windows/issues)を作成してください。**
 
 ## ライセンス
