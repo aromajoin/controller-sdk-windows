@@ -17,14 +17,12 @@
 5. [ライセンス](#ライセンス)
 
 ## 対応デバイス
-* Aroma Shooter Bluetoothタイプ
 * Aroma Shooter USBタイプ
 
 ## 前提条件
 * Windows版: 8+
 * .NET Framework: 4.5+
 * Aroma Shooter USBタイプの場合は、[ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
-* Aroma Shooter Bluetoothタイプの場合は、WindowsのBluetooth接続ガイドを確認してください。[日本語](https://s3-ap-northeast-1.amazonaws.com/aromajoin-downloads/software/aroma-player/AromaPlayer_Manual_Windows8_BLE_JP.pdf)/[English](https://www.makeuseof.com/tag/set-up-bluetooth-windows-10/)。
 
 ## インストール  
 1. このリポジトリを複製するか、[.zipファイル](https://github.com/aromajoin/controller-sdk-windows/releases/)をダウンロードしてください。
