@@ -14,6 +14,7 @@
 4. [Usage](https://github.com/aromajoin/controller-sdk-windows#usage)
     * [Setup and connect devices](https://github.com/aromajoin/controller-sdk-windows#setup-and-connect-devices)
     * [Diffuse scents](https://github.com/aromajoin/controller-sdk-windows#diffuse-scents)
+    * [Stop diffusing](https://github.com/aromajoin/controller-sdk-windows#stop-diffusing)
 5. [License](https://github.com/aromajoin/controller-sdk-windows#license)
 
 ## Supported devices
@@ -40,21 +41,26 @@ You might want to try the [sample app](https://github.com/aromajoin/controller-s
  
 *Firstly, get the reference of AromaShooterController*
 ```C#
-AromaShooterController aromaShooterController = AromaShooterController.sharedInstance;
+AromaShooterController aromaShooterController = AromaShooterController.SharedInstance;
 ```
 ### Setup and connect devices
 ```C#
-aromaShooterController.setup();
+aromaShooterController.Setup();
 ```
 ### Diffuse scents 
 
 Using *Diffuse APIs*  :
 ```C#
-aromaShooterController.diffuse(durration, ports, booster);
+aromaShooterController.Diffuse(durration, ports, booster);
 ``` 
 For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds.
 ```
-aromaShooterController.diffuse(3000, new int[]{1, 2, 3}, true);
+aromaShooterController.Diffuse(3000, new int[]{1, 2, 3}, true);
+```
+
+### Stop diffusing
+```C#
+aromaShooterController.Stop();
 ```
 
 **If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-windows/issues).**
