@@ -29,8 +29,6 @@
 2. [’libs’フォルダ](https://github.com/aromajoin/controller-sdk-windows/tree/master/libs)でライブラリバイナリファイル（.dll）を入手してください。
 3. これらの.dllファイルをプロジェクトに*References*として追加してください。  
 
-**Bluetoothタイプ**では、アプリケーションを起動する前に、WindowsのBluetooth設定セクションからAroma Shooterに接続してください。 アプリを再起動した場合は、もう一度再接続してください。
-
 ## サンプル
 Visual Studioを使用して[サンプルアプリケーション](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)を試してみてください。
 
@@ -46,7 +44,7 @@ aromaShooterController.Setup();
 ```
 ### 香りを噴射する
 
-「Diffuse」APIを使用してください。
+#### アロマシューターをすべて噴射する
 ```C#
 /**
  * @param duration     噴射持続時間（ミリ秒）。
@@ -58,6 +56,14 @@ aromaShooterController.Diffuse(durration, ports, booster);
 例：以下のコードは、カートリッジ1,2および3を3秒間噴射します。
 ```C#
 aromaShooterController.Diffuse(3000, new int[]{1, 2, 3}, true);
+```
+#### 特定のアロマシューターを噴射する
+```C#
+aromaShooterController.Diffuse(ports, duration, booster, aromashooter_serial);
+```  
+例：次のコードは、アロマシューター "ASN1UA0001"で3秒間カートリッジ1、2、および3を拡散させます。
+```C#
+aromaShooterController.Diffuse(new int[] { 1, 2, 3}, 3000, true, "ASN1UA0001");
 ```
 ### 噴射を止める
 ```
