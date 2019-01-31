@@ -29,8 +29,6 @@
 * Get library binary files (.dll) at [`libs` folder](https://github.com/aromajoin/controller-sdk-windows/tree/master/libs).
 * Add these .dll files into your project as *References*.  
 
-**For Bluetooth version**, please connect Aroma Shooter via Bluetooth Settings section in Windows before starting application. If you restart your app, make sure to reconnect it again.  
-
 ## Sample
 You might want to try the [sample app](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample) by using Visual Studio.
 
@@ -46,21 +44,21 @@ aromaShooterController.Setup();
 ```
 ### Diffuse scents 
 
-#### Diffuse all Aroma Shooter
-Using *Diffuse APIs*  :
+#### Diffuse all Aroma Shooters
 ```C#
 aromaShooterController.Diffuse(durration, ports, booster);
+```
 
 For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds.
-```
+```C#
 aromaShooterController.Diffuse(3000, new int[]{1, 2, 3}, true);
 ```
+
 #### Diffuse a specific Aroma Shooter
 ```C#
 aromaShooterController.Diffuse(ports, duration, booster, aromashooter_serial);
-```
-
-For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds at Aroma Shooter with serial id "ASN1UA0001"
+```  
+For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds at Aroma Shooter with serial id "ASN1UA0001".
 ```C#
 aromaShooterController.Diffuse(new int[] { 1, 2, 3}, 3000, true, "ASN1UA0001");
 ```
