@@ -46,13 +46,23 @@ aromaShooterController.Setup();
 ```
 ### Diffuse scents 
 
+#### Diffuse all Aroma Shooter
 Using *Diffuse APIs*  :
 ```C#
 aromaShooterController.Diffuse(durration, ports, booster);
-``` 
+
 For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds.
 ```
 aromaShooterController.Diffuse(3000, new int[]{1, 2, 3}, true);
+```
+#### Diffuse a specific Aroma Shooter
+```C#
+aromaShooterController.Diffuse(ports, duration, booster, aromashooter_serial);
+```
+
+For example, the following code will diffuse cartridge 1, 2, and 3 for 3 seconds at Aroma Shooter with serial id "ASN1UA0001"
+```C#
+aromaShooterController.Diffuse(new int[] { 1, 2, 3}, 3000, true, "ASN1UA0001");
 ```
 
 ### Stop diffusing
