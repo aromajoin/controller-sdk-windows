@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSample", "AromaShooterControllerSample\ControllerSample.csproj", "{FAAAF84F-AFEC-46D3-87C1-7F93CF11C0F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerSample2", "ControllerSample2\ControllerSample2.csproj", "{4E82418B-7913-4ECE-97DE-61FAA183EC99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{FAAAF84F-AFEC-46D3-87C1-7F93CF11C0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAAAF84F-AFEC-46D3-87C1-7F93CF11C0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAAAF84F-AFEC-46D3-87C1-7F93CF11C0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E82418B-7913-4ECE-97DE-61FAA183EC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E82418B-7913-4ECE-97DE-61FAA183EC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E82418B-7913-4ECE-97DE-61FAA183EC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E82418B-7913-4ECE-97DE-61FAA183EC99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC626E38-A34A-4879-805A-7A0AD2D048E2}
 	EndGlobalSection
 EndGlobal
