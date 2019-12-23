@@ -11,9 +11,9 @@
 2. [Prerequisites](https://github.com/aromajoin/controller-sdk-windows#prerequisites)
 3. [Installation](https://github.com/aromajoin/controller-sdk-windows#installation)
 4. [Usage](https://github.com/aromajoin/controller-sdk-windows#usage)
-    * [Setup and connect devices](https://github.com/aromajoin/controller-sdk-windows#connecting)
-    * [Functions that compatible with both Aroma Shooter 1 & 2](https://github.com/aromajoin/controller-sdk-windows#functions-that-compatible-with-both-aroma-shooter-1-&-2)
-    * [Functions that compatible with Aroma Shooter 2 only](https://github.com/aromajoin/controller-sdk-windows#functions-that-compatible-with-aroma-shooter-2-only)
+    * [Setup and connect devices](https://github.com/aromajoin/controller-sdk-windows#0.-connecting)
+    * [Functions that compatible with both Aroma Shooter 1 & 2](https://github.com/aromajoin/controller-sdk-windows#1.-functions-that-compatible-with-both-aroma-shooter-1-&-2)
+    * [Functions that compatible with Aroma Shooter 2 only](https://github.com/aromajoin/controller-sdk-windows#2.-functions-that-compatible-with-aroma-shooter-2-only)
 5. [License](https://github.com/aromajoin/controller-sdk-windows#license)
 
 ## Supported devices
@@ -35,7 +35,7 @@ You might want to try the [sample app](https://github.com/aromajoin/controller-s
 
 ## Usage  
 
-#### 0. Connecting
+#### 0. Connecting  
 
 ##### Firstly, get the reference of AromaShooterController
 
@@ -46,7 +46,7 @@ AromaShooterController aromaShooterController = AromaShooterController.SharedIns
 ```C#
 aromaShooterController.Setup();
 ```
-#### 1. Functions that compatible with both Aroma Shooter 1 & 2
+#### 1. Functions that compatible with both Aroma Shooter 1 & 2  
 
 ##### a. Diffuse from all connected Aroma Shooters.
 ```C#
@@ -87,7 +87,7 @@ aromaShooterController.Stop(string shooterName);
 List<string> connectedAromaShooters = ASController.getConnectedDevices();
 ```
 
-#### 2. Functions that compatible with Aroma Shooter 2 only
+#### 2. Functions that compatible with Aroma Shooter 2 only  
 
 ##### a. Diffuse from all connected Aroma Shooters with intensity control.
 ```C#
