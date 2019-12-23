@@ -10,19 +10,20 @@
 1. [対応デバイス](#対応デバイス)  
 2. [前提条件](#前提条件)
 3. [インストール](#インストール)
-4. [使用法](#使用法)
-    * [デバイスのセットアップと接続](#デバイスのセットアップと接続)
-    * [香りを噴射する](#香りを噴射する)
-    * [噴射を止める](#噴射を止める)
+4. [使い方](#使い方#)
+    * [接続](#接続)
+    * [Aroma Shooter 1 & 2のどちらも使える関数](#Aroma Shooter 1 & 2のどちらも使える関数)
+    * [Aroma Shooter 新バージョンのみ使える関数](#Aroma Shooter 新バージョンのみ使える関数)
 5. [ライセンス](#ライセンス)
 
 ## 対応デバイス
-* Aroma Shooter USBタイプ
+* Aroma Shooter 1 USBタイプ
+* Aroma Shooter 2 （USB接続の場合）
 
 ## 前提条件
-* Windows版: 8+
-* .NET Framework: 4.5+
-* Aroma Shooter USBタイプの場合は、[ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
+* Windows版: 10+
+* .NET Framework: 4.6+
+* [ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
 
 ## インストール  
 1. このリポジトリを複製するか、[.zipファイル](https://github.com/aromajoin/controller-sdk-windows/releases/)をダウンロードしてください。
@@ -32,42 +33,83 @@
 ## サンプル
 Visual Studioを使用して[サンプルアプリケーション](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)を試してみてください。
 
-## 使用法  
- 
-*初めにAroma Shooter Controllerのリファレンスを入手してください。*
+## 使い方  
+### 0. 接続
+
+#### 初めにAroma Shooter Controllerのリファレンスを作る。
 ```C#
 AromaShooterController aromaShooterController = AromaShooterController.SharedInstance;
 ```
-### デバイスのセットアップと接続
+#### デバイスのセットアップと接続
 ```C#
 aromaShooterController.Setup();
 ```
-### 香りを噴射する
+### 1. Aroma Shooter 1 & 2のどちらも使える関数
 
-#### アロマシューターをすべて噴射する
+#### a. 接続されたアロマシューターすべて噴射
 ```C#
+ASController.DiffuseAll(int durationMillisecs, int[] ports, bool booster);
 /**
- * @param duration     噴射持続時間（ミリ秒）。
- * @param ports        カートリッジ番号を噴射する。値：1 ~ 6.
- * @param booster      ブースターが使用されているかどうかを判定する。(true: より強く噴射する, false: より弱く噴射する)
+ * @param durationMillisecs     噴射持続時間（ミリ秒）。
+ * @param ports        噴射する カートリッジ番号。値： 1 ~ 6.
+ * @param booster      ブースターを使用するかどうかを判定する。(true: より強く噴射する , false: より弱く噴射する )
  */
-aromaShooterController.Diffuse(durration, ports, booster);
-``` 
-例：以下のコードは、カートリッジ1,2および3を3秒間噴射します。
-```C#
-aromaShooterController.Diffuse(3000, new int[]{1, 2, 3}, true);
 ```
-#### 特定のアロマシューターを噴射する
+例：以下のコードは、カートリッジ 1,2 および 5 を 3 秒間噴射します。
 ```C#
-aromaShooterController.Diffuse(ports, duration, booster, aromashooter_serial);
-```  
-例：次のコードは、アロマシューター "ASN1UA0001"で3秒間カートリッジ1、2、および3を拡散させます。
+ASController.DiffuseAll(3000, new int[]{1, 2, 5}, true);
+```
+#### b. アロマシューターの名前を指定して噴射
 ```C#
-aromaShooterController.Diffuse(new int[] { 1, 2, 3}, 3000, true, "ASN1UA0001");
+ASController.Diffuse(int durationMillisecs, int[] ports, bool booster, string shooterName);
 ```
-### 噴射を止める
+例：
+```C#
+ASController.Diffuse(3000, new int[]{1, 2, 5}, true,”ASN1UA0150”);
+ASController.Diffuse(3000, new int[]{1, 2, 5}, true,”ASN2A00001”);
 ```
-aromaShooterController.Stop();
+#### c. 接続されたアロマシューター全て噴射停止
+```C#
+ASController.StopAll();
+```
+
+#### d.   アロマシューターの名前を指定して噴射停止  
+```C#
+ASController.Stop(string shooterName);
+```
+
+#### e. 接続されたアロマシューターリスト取得
+
+```C#
+List<String> connectedAromaShooters = ASController.getConnectedDevices();
+```
+
+### 2. Aroma Shooter 新バージョンのみ使える関数
+
+#### a. 接続されたアロマシューター全て強度制御付き噴射
+```C#
+ASController.DiffuseAll(int durationMillisecs, List<AromaPort> ports, int boosterIntensity, int fanIntensity);
+```
+
+AromaPort クラスに number と intensity というメンバーがあります。 number は噴
+射するポート番号で、 intensity は強度（0~100）です。
+
+#### b. アロマシューターの名前を指定して強度制御付き噴射
+```C#
+ASController.Diffuse(int durationMillisecs, List<AromaPort> ports, int boosterIntensity, int fanIntensity, string shooterName);
+```
+
+#### c. 接続されたアロマシューター全て特定のポートなど噴射停止
+```C#
+ASController.Stop(int[] ports, bool stopBooster, bool stopFan);
+```
+
+stopBooster が true の時 booster が停止されます。 stopFan が true の時外部について
+いるファンが停止されます。
+
+#### d. アロマシューターの名前を指定して特定のポートなど噴射停止
+```C#
+ASController.Stop(string shooterName, int[] ports, bool stopBooster, bool stopFan);	
 ```
 **問題が発生したり、新機能が必要な場合は、[新しい問題](https://github.com/aromajoin/controller-sdk-windows/issues)を作成してください。**
 
