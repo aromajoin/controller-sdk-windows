@@ -10,11 +10,11 @@
 1. [対応デバイス](#対応デバイス)  
 2. [前提条件](#前提条件)
 3. [インストール](#インストール)
-4. [使い方](#使い方#)
-    * [接続](#0. 接続)
-    * [Aroma Shooter 1 & 2のどちらも使える関数](#1. Aroma Shooter 1 & 2のどちらも使える関数)
-    * [Aroma Shooter 新バージョンのみ使える関数](#2. Aroma Shooter 新バージョンのみ使える関数)
-5. [ライセンス](#ライセンス)
+4. [使い方](https://github.com/aromajoin/controller-sdk-windows/blob/master/README-JP.md#使い方)
+    * [接続](https://github.com/aromajoin/controller-sdk-windows/blob/master/README-JP.md#0-接続)
+    * [Aroma Shooter 1 & 2のどちらも使える関数](https://github.com/aromajoin/controller-sdk-windows/blob/master/README-JP.md#1-aroma-shooter-1--2のどちらも使える関数)
+    * [Aroma Shooter 新バージョンのみ使える関数](https://github.com/aromajoin/controller-sdk-windows/blob/master/README-JP.md#2-aroma-shooter-新バージョンのみ使える関数)
+5. [ライセンス](https://github.com/aromajoin/controller-sdk-windows/blob/master/README-JP.md#ライセンス)
 
 ## 対応デバイス
 * Aroma Shooter 1 USBタイプ
@@ -33,7 +33,8 @@
 ## サンプル
 Visual Studioを使用して[サンプルアプリケーション](https://github.com/aromajoin/controller-sdk-windows/tree/master/sample)を試してみてください。
 
-## 使い方  
+## 使い方
+
 ### 0. 接続
 
 #### 初めにAroma Shooter Controllerのリファレンスを作る。
@@ -114,4 +115,5 @@ ASController.Stop(string shooterName, int[] ports, bool stopBooster, bool stopFa
 **問題が発生したり、新機能が必要な場合は、[新しい問題](https://github.com/aromajoin/controller-sdk-windows/issues)を作成してください。**
 
 ## ライセンス
+
 [こちら](https://github.com/aromajoin/controller-sdk-windows/blob/master/LICENSE.md)を参照してください。
