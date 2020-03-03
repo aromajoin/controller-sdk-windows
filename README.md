@@ -115,4 +115,4 @@ ASController.Stop(string shooterName, int[] ports, bool stopBooster, bool stopFa
 **If you get any issues or require any new features, please create a [new issue](https://github.com/aromajoin/controller-sdk-windows/issues).**
 
 ## License  
-Copyright 2020 Aromajoin Corporation
+Please check the [LICENSE](/LICENSE.md) file for the details.
