@@ -82,7 +82,7 @@ ASController.Stop(string shooterName);
 #### e. 接続されたアロマシューターリスト取得
 
 ```C#
-List<String> connectedAromaShooters = ASController.getConnectedDevices();
+List<String> connectedAromaShooters = ASController.GetConnectedDevices();
 ```
 
 ### 2. Aroma Shooter 新バージョンのみ使える関数
