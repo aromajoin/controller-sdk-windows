@@ -22,7 +22,7 @@
 
 ## Prerequisites
 * Windows version: 10+.
-* .NET Framework: 4.6+. 
+* .NET Framework: >= 4.7.1 
 * Please install [device driver](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip).
 
 ## Installation  
