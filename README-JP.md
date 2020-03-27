@@ -22,7 +22,7 @@
 
 ## 前提条件
 * Windows版: 10+
-* .NET Framework: 4.6+
+* .NET Framework: >= 4.7.1
 * [ドライバ](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip)をインストールしてください。
 
 ## インストール  
