@@ -24,7 +24,7 @@
 ## Prerequisites
 * Windows version: 10+.
 * .NET Framework: >= 4.7.1 
-* Please install [device driver](http://www.ftdichip.com/Drivers/CDM/CDM21224_Setup.zip).
+* Please install [device driver](https://ftdichip.com/wp-content/uploads/2023/09/CDM-v2.12.36.4-WHQL-Certified.zip).
 
 ## Installation  
 * Clone this repository or [download the .zip file](https://github.com/aromajoin/controller-sdk-windows/releases/).
